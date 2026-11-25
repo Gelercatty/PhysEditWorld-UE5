@@ -1,24 +1,31 @@
 # PhysEditWorld-UE5
 
-Unreal Engine 5 toolkit for recording, replaying, and rendering controlled physics experiments for **PhysEditWorld: A Large-Scale Dataset Toward Physics-Editable World Models**.
+**PhysEditWorld: A Large-Scale Dataset Toward Physics-Editable World Models**
 
-[Paper (arXiv)](https://arxiv.org/abs/2606.26694) · [Project page and videos](https://yizhiqianbi.github.io/physeditworld/) · [Dataset (ModelScope)](https://www.modelscope.cn/datasets/GelerCAT/PhysicalWorld)
+Unreal Engine 5 toolkit for recording, replaying, and rendering controlled physics experiments.
 
-## Matched replay
+[Paper](https://arxiv.org/abs/2606.26694) · [Project page and videos](https://yizhiqianbi.github.io/physeditworld/) · [Dataset on ModelScope](https://www.modelscope.cn/datasets/GelerCAT/PhysicalWorld)
 
-A matched replay starts with a single recorded action trace. Each run uses the same initial state, character controller, action sequence, and camera policy, with a different gravity multiplier. The pipeline renders synchronized views and exports frame and replay metadata so that runs can be compared across gravity settings.
+[![ModelScope dataset downloads](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fwww.modelscope.cn%2Fopenapi%2Fv1%2Fdatasets%2FGelerCAT%2FPhysicalWorld&query=%24.data.downloads&label=Dataset+downloads&color=1677ff&cacheSeconds=3600)](https://www.modelscope.cn/datasets/GelerCAT/PhysicalWorld)
 
-## Release status
+![Figure 1 from the PhysEditWorld paper showing the matched replay pipeline and its synchronized outputs](https://arxiv.org/html/2606.26694v2/Teaser.png)
 
-This repository currently hosts the project overview. The code and runnable demo are in preparation for Unreal Engine 5.7.
+## Abstract
 
-| Component | Planned release |
-| --- | --- |
-| UE Editor plugin | Tools to prepare a scene, inspect navigation paths, record action traces, and configure replay and rendering. |
-| Linux batch tools | Scripts to validate replay plans, run headless Unreal Editor jobs, and encode rendered frames into videos. |
-| Rollout demo | Replay the same movement and jump inputs at **0.5× and 1.0× gravity** in the standard UE5 Third Person template. |
+PhysEditWorld is a multimodal dataset for studying how game world models respond when a physical parameter changes. The initial release focuses on gravity. The UE5 pipeline records an action trace once and replays it at several gravity levels while holding the scene, initial state, controller, and camera policy fixed. The resulting matched rollouts let researchers compare motion under controlled gravity changes.
 
-The demo will use a project created through **Games → Third Person** in UE 5.7 with **Variant** set to **None**. Toolkit setup and replay commands will accompany the release. [Epic’s Third Person template guide](https://dev.epicgames.com/documentation/en-us/unreal-engine/third-person-template-in-unreal-engine?application_version=5.7)
+The dataset covers **12 UE5 scenes**, **100+ hours of gameplay interactions**, and **60M+ rendered frames**. It pairs synchronized multi-view rendering with depth, normals, audio, action traces, camera trajectories, engine states, semantic annotations, and gravity labels. The paper reports that training with PhysEditWorld improves gravity-sensitive motion generation and gravity understanding.
+
+[Read the full abstract on arXiv](https://arxiv.org/abs/2606.26694)
+
+## Open-source checklist
+
+- [x] Publish the dataset on ModelScope.
+- [ ] Release the UE 5.7 Editor plugin for scene preparation, action recording, and replay configuration.
+- [ ] Release the Linux batch tools for plan validation, headless replay and rendering, and video encoding.
+- [ ] Release a runnable **Third Person** rollout demo that replays the same movement and jump inputs at **0.5× and 1.0× gravity**.
+
+The demo uses the standard UE 5.7 **Third Person** template with **Variant** set to **None**. Setup and replay instructions will accompany the toolkit. [Epic’s Third Person template guide](https://dev.epicgames.com/documentation/en-us/unreal-engine/third-person-template-in-unreal-engine?application_version=5.7)
 
 ## Citation
 
