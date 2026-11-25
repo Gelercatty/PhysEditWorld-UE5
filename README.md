@@ -1,5 +1,11 @@
 <div align="center">
 
+<p>
+  <a href="assets/physeditworld-overview.webp">
+    <img src="assets/physeditworld-overview.webp" width="680" alt="Figure 1 from the PhysEditWorld paper showing matched replay and synchronized outputs">
+  </a>
+</p>
+
 <h1>PhysEditWorld</h1>
 
 <p><strong>A Large-Scale Dataset Toward Physics-Editable World Models</strong></p>
@@ -15,8 +21,6 @@
   <a href="https://arxiv.org/abs/2606.26694"><img src="https://img.shields.io/badge/Paper-B31B1B" alt="Paper on arXiv"></a>
   <a href="https://www.modelscope.cn/datasets/GelerCAT/PhysicalWorld"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fmodelscope.cn%2Fopenapi%2Fv1%2Fdatasets%2FGelerCAT%2FPhysicalWorld&amp;query=%24.data.downloads&amp;label=ModelScope+downloads&amp;color=1677ff&amp;cacheSeconds=3600" alt="ModelScope dataset downloads"></a>
 </p>
-
-<img src="assets/physeditworld-overview.webp" width="760" alt="Figure 1 from the PhysEditWorld paper showing matched replay and synchronized outputs">
 
 </div>
 
