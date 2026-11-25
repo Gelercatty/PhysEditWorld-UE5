@@ -16,9 +16,9 @@ This repository currently hosts the project overview. The code and runnable demo
 | --- | --- |
 | UE Editor plugin | Tools to prepare a scene, inspect navigation paths, record action traces, and configure replay and rendering. |
 | Linux batch tools | Scripts to validate replay plans, run headless Unreal Editor jobs, and encode rendered frames into videos. |
-| Rollout demo | A Classroom example that replays one route at **0.5× and 1.0× gravity**. Each run is 20 seconds at 30 fps, with eight camera views at 1280 × 720. |
+| Rollout demo | Replay the same movement and jump inputs at **0.5× and 1.0× gravity** in the standard UE5 Third Person template. |
 
-The project page shows matched rollouts from the dataset. Setup instructions and commands for the Classroom example will accompany the code release.
+The demo will use a project created through **Games → Third Person** in UE 5.7 with **Variant** set to **None**. Toolkit setup and replay commands will accompany the release. [Epic’s Third Person template guide](https://dev.epicgames.com/documentation/en-us/unreal-engine/third-person-template-in-unreal-engine?application_version=5.7)
 
 ## Citation
 
