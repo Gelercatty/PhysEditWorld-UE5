@@ -6,9 +6,9 @@ Unreal Engine 5 toolkit for recording, replaying, and rendering controlled physi
 
 [Paper](https://arxiv.org/abs/2606.26694) · [Project page and videos](https://yizhiqianbi.github.io/physeditworld/) · [Dataset on ModelScope](https://www.modelscope.cn/datasets/GelerCAT/PhysicalWorld)
 
-[![ModelScope dataset downloads](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fwww.modelscope.cn%2Fopenapi%2Fv1%2Fdatasets%2FGelerCAT%2FPhysicalWorld&query=%24.data.downloads&label=Dataset+downloads&color=1677ff&cacheSeconds=3600)](https://www.modelscope.cn/datasets/GelerCAT/PhysicalWorld)
+[![ModelScope dataset downloads](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fmodelscope.cn%2Fopenapi%2Fv1%2Fdatasets%2FGelerCAT%2FPhysicalWorld&query=%24.data.downloads&label=ModelScope+downloads&color=1677ff&cacheSeconds=3600)](https://www.modelscope.cn/datasets/GelerCAT/PhysicalWorld)
 
-![Figure 1 from the PhysEditWorld paper showing the matched replay pipeline and its synchronized outputs](https://arxiv.org/html/2606.26694v2/Teaser.png)
+![Figure 1 from the PhysEditWorld paper showing the matched replay pipeline and its synchronized outputs](assets/physeditworld-overview.webp)
 
 ## Abstract
 
