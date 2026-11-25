@@ -1,35 +1,44 @@
-# PhysEditWorld-UE5
+<div align="center">
 
-**PhysEditWorld: A Large-Scale Dataset Toward Physics-Editable World Models**
+<h1>PhysEditWorld</h1>
 
-Unreal Engine 5 toolkit for recording, replaying, and rendering controlled physics experiments.
+<p><strong>A Large-Scale Dataset Toward Physics-Editable World Models</strong></p>
 
-[Paper](https://arxiv.org/abs/2606.26694) · [Project page and videos](https://yizhiqianbi.github.io/physeditworld/) · [Dataset on ModelScope](https://www.modelscope.cn/datasets/GelerCAT/PhysicalWorld)
+<p>
+  Bin&nbsp;Hu<sup>*</sup>, Yanwen&nbsp;Ma<sup>*</sup>, Jiehui&nbsp;Huang, Ziliang&nbsp;Zhang, Haoning&nbsp;Wu, Ruicheng&nbsp;Zhang, Yaokun&nbsp;Li, Zijun&nbsp;Wang, Yuechen&nbsp;Zhang, Chun-Mei&nbsp;Tseng, Hanhui&nbsp;Li, Shengju&nbsp;Qian, Jun&nbsp;Zhou, Kaipeng&nbsp;Zhang, Xiaodan&nbsp;Liang, Jiaya&nbsp;Jia, Xiu&nbsp;Li
+  <br>
+  <sub>* Equal contribution</sub>
+</p>
 
-[![ModelScope dataset downloads](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fmodelscope.cn%2Fopenapi%2Fv1%2Fdatasets%2FGelerCAT%2FPhysicalWorld&query=%24.data.downloads&label=ModelScope+downloads&color=1677ff&cacheSeconds=3600)](https://www.modelscope.cn/datasets/GelerCAT/PhysicalWorld)
+<p>
+  <a href="https://arxiv.org/abs/2606.26694"><img src="https://img.shields.io/badge/Paper-B31B1B" alt="Paper on arXiv"></a>
+  <a href="https://yizhiqianbi.github.io/physeditworld/"><img src="https://img.shields.io/badge/Project-374151" alt="Project page and videos"></a>
+  <a href="https://www.modelscope.cn/datasets/GelerCAT/PhysicalWorld"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fmodelscope.cn%2Fopenapi%2Fv1%2Fdatasets%2FGelerCAT%2FPhysicalWorld&amp;query=%24.data.downloads&amp;label=ModelScope+downloads&amp;color=1677ff&amp;cacheSeconds=3600" alt="ModelScope dataset downloads"></a>
+</p>
 
-![Figure 1 from the PhysEditWorld paper showing the matched replay pipeline and its synchronized outputs](assets/physeditworld-overview.webp)
+<img src="assets/physeditworld-overview.webp" width="760" alt="Figure 1 from the PhysEditWorld paper showing matched replay and synchronized outputs">
+
+</div>
 
 ## Abstract
 
-PhysEditWorld is a multimodal dataset for studying how game world models respond when a physical parameter changes. The initial release focuses on gravity. The UE5 pipeline records an action trace once and replays it at several gravity levels while holding the scene, initial state, controller, and camera policy fixed. The resulting matched rollouts let researchers compare motion under controlled gravity changes.
+PhysEditWorld is a multimodal dataset for studying how game world models respond to explicit changes in physics. The first release focuses on gravity. The Unreal Engine 5 toolkit implements **matched replay** by running the same recorded actions at several gravity levels with a fixed scene, initial state, character controller, and camera policy.
 
-The dataset covers **12 UE5 scenes**, **100+ hours of gameplay interactions**, and **60M+ rendered frames**. It pairs synchronized multi-view rendering with depth, normals, audio, action traces, camera trajectories, engine states, semantic annotations, and gravity labels. The paper reports that training with PhysEditWorld improves gravity-sensitive motion generation and gravity understanding.
-
-[Read the full abstract on arXiv](https://arxiv.org/abs/2606.26694)
+The dataset spans **12 UE5 scenes**, **100+ hours of gameplay**, and **60M+ rendered frames**. It includes synchronized multi-view RGB, depth, normals, and audio, along with action traces, camera trajectories, engine states, semantic annotations, and gravity labels. The paper reports improvements in gravity-sensitive motion generation and gravity understanding after training with PhysEditWorld. [Full abstract](https://arxiv.org/abs/2606.26694)
 
 ## Open-source checklist
 
-- [x] Publish the dataset on ModelScope.
-- [ ] Release the UE 5.7 Editor plugin for scene preparation, action recording, and replay configuration.
-- [ ] Release the Linux batch tools for plan validation, headless replay and rendering, and video encoding.
-- [ ] Release a runnable **Third Person** rollout demo that replays the same movement and jump inputs at **0.5× and 1.0× gravity**.
+- [x] Publish the **dataset** on ModelScope.
+- [ ] Release the **UE 5.7 Editor plugin** for scene preparation, action recording, and replay setup.
+- [ ] Release the **Linux batch tools** for plan validation, headless replay, rendering, and video encoding.
+- [ ] Release the **Third Person rollout demo** with the same movement and jump inputs replayed at **0.5× and 1.0× gravity**.
 
-The demo uses the standard UE 5.7 **Third Person** template with **Variant** set to **None**. Setup and replay instructions will accompany the toolkit. [Epic’s Third Person template guide](https://dev.epicgames.com/documentation/en-us/unreal-engine/third-person-template-in-unreal-engine?application_version=5.7)
+The planned demo uses the standard UE 5.7 **Third Person** template with **Variant** set to **None**. [Epic’s template guide](https://dev.epicgames.com/documentation/en-us/unreal-engine/third-person-template-in-unreal-engine?application_version=5.7)
 
 ## Citation
 
-If you use this toolkit or the dataset in your research, please cite the paper.
+<details>
+<summary>BibTeX</summary>
 
 ```bibtex
 @misc{hu2026physeditworldlargescaledatasetphysicseditable,
@@ -45,3 +54,5 @@ If you use this toolkit or the dataset in your research, please cite the paper.
   url           = {https://arxiv.org/abs/2606.26694}
 }
 ```
+
+</details>
