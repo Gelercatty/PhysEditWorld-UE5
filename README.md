@@ -11,8 +11,8 @@
 </p>
 
 <p>
+  <a href="https://yizhiqianbi.github.io/physeditworld/"><img src="https://img.shields.io/badge/Project%20Page-374151" alt="PhysEditWorld project homepage"></a>
   <a href="https://arxiv.org/abs/2606.26694"><img src="https://img.shields.io/badge/Paper-B31B1B" alt="Paper on arXiv"></a>
-  <a href="https://yizhiqianbi.github.io/physeditworld/"><img src="https://img.shields.io/badge/Project-374151" alt="Project page and videos"></a>
   <a href="https://www.modelscope.cn/datasets/GelerCAT/PhysicalWorld"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fmodelscope.cn%2Fopenapi%2Fv1%2Fdatasets%2FGelerCAT%2FPhysicalWorld&amp;query=%24.data.downloads&amp;label=ModelScope+downloads&amp;color=1677ff&amp;cacheSeconds=3600" alt="ModelScope dataset downloads"></a>
 </p>
 
