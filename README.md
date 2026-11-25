@@ -28,7 +28,7 @@
 
 PhysEditWorld is a multimodal dataset for studying how game world models respond to explicit changes in physics. The first release focuses on gravity. The Unreal Engine 5 toolkit implements **matched replay** by running the same recorded actions at several gravity levels with a fixed scene, initial state, character controller, and camera policy.
 
-The dataset spans **12 UE5 scenes**, **100+ hours of gameplay**, and **60M+ rendered frames**. It includes synchronized multi-view RGB, depth, normals, and audio, along with action traces, camera trajectories, engine states, semantic annotations, and gravity labels. The paper reports improvements in gravity-sensitive motion generation and gravity understanding after training with PhysEditWorld. [Full abstract](https://arxiv.org/abs/2606.26694)
+The dataset spans **12 UE5 scenes**, **100+ hours of gameplay**, and **60M+ rendered frames**. It includes synchronized multi-view RGB, depth, normals, and audio, along with action traces, camera trajectories, engine states, semantic annotations, and gravity labels. The paper reports improvements in gravity-sensitive motion generation and gravity understanding after training with PhysEditWorld. [Full abstract](https://arxiv.org/abs/2606.26694).
 
 ## Open-source checklist
 
